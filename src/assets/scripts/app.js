@@ -239,12 +239,11 @@ if(window.location.href.includes("libros")){
     
     for(let i = 0; i < botonNavigate.length; i ++){
         // @ts-ignore
-        botonNavigate[i].onclick = function() {navigation("../views/libroDetalle.html", botonNavigate[i].id, cat)}
+        botonNavigate[i].onclick = function() {navigation("../views/librodetalle.html", botonNavigate[i].id, cat)}
     }
 }
-console.log("prueba1");
-if(window.location.href.includes("libroDetalle")){
-    console.log("prueba2");
+
+if(window.location.href.includes("librodetalle")){
     let id = localStorage.getItem("id");
     let cat = localStorage.getItem("categoria");
     let libro = libros[Number(id) - 1];
